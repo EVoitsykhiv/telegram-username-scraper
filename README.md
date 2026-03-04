@@ -17,13 +17,13 @@ Python script that collects usernames from Telegram groups.
 
 ## Example Output
 
-username,id
+username, id
 user1,123456
 user2,654321
 
 ## Installation
 
-pip install telethon pandas
+pip install -r requirements.txt
 
 ## Usage
 
