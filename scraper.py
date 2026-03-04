@@ -1,10 +1,9 @@
-from telethon.sync import TelegramClient
-import csv
+import os
+from telethon.sync import TelegramClient, csv
 
-api_id = 123456
-api_hash = "your_api_hash"
-
-group = "group_username"
+api_id = os.getenv("API_ID")
+api_hash = os.getenv("API_HASH")
+group = os.getenv("GROUP")
 
 client = TelegramClient("session", api_id, api_hash)
 
