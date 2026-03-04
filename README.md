@@ -28,3 +28,13 @@ pip install telethon pandas
 ## Usage
 
 python scraper.py
+
+## Example
+
+Output file:
+
+users.csv
+
+username,id
+john_doe,12345678
+crypto_trader,87654321
