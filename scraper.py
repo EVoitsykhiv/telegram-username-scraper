@@ -1,9 +1,13 @@
 import os
-from telethon.sync import TelegramClient, csv
+from telethon.sync import TelegramClient
+import csv
 
 api_id = os.getenv("API_ID")
 api_hash = os.getenv("API_HASH")
 group = os.getenv("GROUP")
+
+if not api_id or not api_hash or not group:
+    raise ValueError("Missing API_ID, API_HASH or GROUP environment variables")
 
 client = TelegramClient("session", api_id, api_hash)
 
